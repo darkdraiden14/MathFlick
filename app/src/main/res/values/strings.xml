@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name" translatable="false">MathFlick</string>
+    <string name="math_flick" translatable="false">MathFlick</string>
+    <string name="class1" translatable="false">Class 1</string>
+    <string name="class2" translatable="false">Class 2</string>
+    <string name="class3" translatable="false">Class 3</string>
+    <string name="class4" translatable="false">Class 4</string>
+    <string name="class5" translatable="false">Class 5</string>
+    <string name="class6" translatable="false">Class 6</string>
+    <string name="class7" translatable="false">Class 7</string>
+    <string name="class8" translatable="false">Class 8</string>
+    <string name="class9" translatable="false">Class 9</string>
+    <string name="class10" translatable="false">Class 10</string>
+    <string name="class11" translatable="false">Class 11</string>
+    <string name="class12" translatable="false">Class 12</string>
+    <string name="trignometry">Trignometry</string>
+    <string name="sine">Sine</string>
+    <string name="cosine">Cosine</string>
+    <string name="real_numbers">Real Numbers</string>
+    <string name="polynomials">Polynomials</string>
+    <string name="linear_equation_in_two_variables">Linear Equation in Two Variables</string>
+    <string name="quadratic_equation">Quadratic Equation</string>
+    <string name="arithmetic_progression">Arithmetic Progression</string>
+    <string name="triangles">Triangles</string>
+    <string name="circle">Circle</string>
+    <string name="statistics">Statistics</string>
+    <string name="probability">Probability</string>
+    <string name="coordinate_geometry">Coordinate Geometry</string>
+    <string name="surface_area_and_volume">Surface Area And Volume</string>
+    <string name="cosinef">cos(a) = B/C</string>
+    <string name="inversecosine">Cos-1</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="result">Result</string>
+    <string name="sinef">sin(a) = A/C</string>
+    <string name="inversesine">sin-1</string>
+    <string name="sineDetail">where,\nA is Side Opposite to angle a \nC is Hypotenuse</string>
+    <string name="cosineDetail">where,\nB is Side Adjacent to angle a \nC is Hypotenuse</string>
+    <string name="tan">tan</string>
+    <string name="inversetan">tan-1</string>
+    <string name="tanDetail">where,\nA is Side Opposite to angle a \nB is Side Adjacent to angle a</string>
+    <string name="tanf">tan(a) = A/B</string>
+    <string name="tangent">Tan</string>
+    <string name="cotant">Cot</string>
+    <string name="cot">cot</string>
+    <string name="inversecot">cot-1</string>
+    <string name="cotDetail">where,\nB is Side Adjacent to angle a \nA is Side Opposite to angle a</string>
+    <string name="cotf">cot(a) = B/A</string>
+    <string name="cosecf">cosec(a) = C/A</string>
+    <string name="inversecosec">cosec-1</string>
+    <string name="cosecDetail">where, \nC is Hypotenuse \nA is Side Opposite to angle a </string>
+    <string name="secf">sec(a) = C/B</string>
+    <string name="inversesec">sec-1</string>
+    <string name="secDetail">where, \nC is Hypotenuse \nB is Side Adjacent to angle a </string>
+    <string name="cosec">cosec</string>
+    <string name="sec">sec</string>
+    <string name="cosecant">Cosec</string>
+    <string name="secant">Sec</string>
+    <string name="arith_a">a (first Term)</string>
+    <string name="arith_an">an (nth Term</string>
+    <string name="arith_d">d (difference)</string>
+    <string name="arith_sn">Sn (Sum of n Terms)</string>
+    <string name="arith_prog">*Enter Any 3 Values</string>
+    <string name="arith_n">n (Number of terms)</string>
+    <string name="arithprogf">A.P. :</string>
+    <string name="arith_prog_detail">a is first number, d is difference,\n an = a + (n-1)d,\n Sn = (n/2)(2a + (n-1)d)</string>
+    <string name="logo">logo</string>
+    <string name="real_numb">*Enter 2 Numbers</string>
+    <string name="real_numb1">First Number</string>
+    <string name="real_numb2">Second Number</string>
+    <string name="real_numbf">H.C.F\n\nL.C.M.</string>
+    <string name="real_numb_detail">Highest Common Factor\n\nLeast Common Multiple</string>
+    <string name="zeroes">Zeroes</string>
+    <string name="division">Polynomial\nDivision</string>
+</resources>

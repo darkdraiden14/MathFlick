@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="classActivities.class10.trignoActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:stretchColumns="0,1"
+        android:baselineAligned="false">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            tools:ignore="UselessParent"
+            android:baselineAligned="false">
+
+            <Button
+                android:id="@+id/sine"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:text="@string/sine"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/cosine"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient1"
+                android:text="@string/cosine"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            tools:ignore="UselessParent"
+            android:baselineAligned="false">
+
+            <Button
+                android:id="@+id/tan"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient11"
+                android:text="@string/tangent"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/cot"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient9"
+                android:text="@string/cotant"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            tools:ignore="UselessParent"
+            android:baselineAligned="false">
+
+            <Button
+                android:id="@+id/sec"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient6"
+                android:text="@string/secant"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/cosec"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient8"
+                android:text="@string/cosecant"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

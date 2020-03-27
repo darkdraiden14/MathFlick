@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mathflick">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="classActivities.class10.linearEqnActivity"></activity>
+        <activity
+            android:name="classActivities.class10.polynomialsActivity"
+            android:label="Polynomials" />
+        <activity
+            android:name="classActivities.class10.realNumbersActivity"
+            android:label="Real Numbers" />
+        <activity
+            android:name="classActivities.class10.arithProgActivity"
+            android:label="Arithmatic Progression" />
+        <activity
+            android:name="classActivities.class10trignometry.secActivity"
+            android:label="Secant" />
+        <activity
+            android:name="classActivities.class10trignometry.cosecActivity"
+            android:label="Cosecant" />
+        <activity
+            android:name="classActivities.class10trignometry.cotActivity"
+            android:label="Cotant" />
+        <activity
+            android:name="classActivities.class10trignometry.tanActivity"
+            android:label="Tangent" />
+        <activity
+            android:name="classActivities.class10trignometry.cosineActivity"
+            android:label="Cosine" />
+        <activity
+            android:name="classActivities.class10trignometry.SineActivity"
+            android:label="Sine" />
+        <activity
+            android:name="classActivities.class10.trignoActivity"
+            android:label="Trignometry" />
+        <activity
+            android:name="classActivities.class10Activity"
+            android:label="Home" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Home" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

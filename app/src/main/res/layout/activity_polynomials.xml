@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="classActivities.class10.polynomialsActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:stretchColumns="0,1"
+        android:baselineAligned="false">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            tools:ignore="UselessParent"
+            android:baselineAligned="false">
+
+            <Button
+                android:id="@+id/zeroes"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient11"
+                android:text="@string/zeroes"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/division"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient6"
+                android:text="@string/division"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
