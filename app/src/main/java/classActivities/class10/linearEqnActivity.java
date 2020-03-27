@@ -1,5 +1,6 @@
 package classActivities.class10;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -12,5 +13,10 @@ public class linearEqnActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linear_eqn);
+        ActionBar arithBar = getSupportActionBar();
+        assert arithBar != null;
+        arithBar.setDisplayShowTitleEnabled(true);
+        arithBar.setDisplayShowHomeEnabled(true);
+        arithBar.show();
     }
 }
