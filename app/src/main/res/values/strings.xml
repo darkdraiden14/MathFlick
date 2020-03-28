@@ -72,4 +72,9 @@
     <string name="real_numb_detail">Highest Common Factor\n\nLeast Common Multiple</string>
     <string name="zeroes">Zeroes</string>
     <string name="division">Polynomial\nDivision</string>
+    <string name="linear_eqn">*Enter both equations in above form</string>
+    <string name="linear_eqn_a">First Equation</string>
+    <string name="linear_eqn_b">Second Equation</string>
+    <string name="find">Find</string>
+    <string name="linear_eqn_detail">Equation should be in form :\nax + by = c\n where, a,b &amp; c are constants.</string>
 </resources>

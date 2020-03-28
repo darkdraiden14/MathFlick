@@ -8,7 +8,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="classActivities.class10.linearEqnActivity"></activity>
+        <activity
+            android:name="classActivities.class10.linearEqnActivity"
+            android:label="Linear Equation in 2 Variables"/>
         <activity
             android:name="classActivities.class10.polynomialsActivity"
             android:label="Polynomials" />
