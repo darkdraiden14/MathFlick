@@ -7,10 +7,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="true"
+        android:allowBackup="true">
+        <activity
+            android:name="classActivities.class10.coordinateGeoActivity"
+            android:label="Coordinate Geometry" />
+        <activity
+            android:name="classActivities.class10.probabilityActivity"
+            android:label="Probability" />
+        <activity
+            android:name="classActivities.class10.statisticsActivity"
+            android:label="Statistics" />
+        <activity
+            android:name="classActivities.class10.surfaceAVActivity"
+            android:label="Surface Area &amp; Volume" />
+        <activity
+            android:name="classActivities.class10.circleActivity"
+            android:label="Circles" />
+        <activity
+            android:name="classActivities.class10.triangleActivity"
+            android:label="Triangles" />
+        <activity
+            android:name="classActivities.class10.quadEqnActivity"
+            android:label="Quadratic Equation" />
         <activity
             android:name="classActivities.class10.linearEqnActivity"
-            android:label="Linear Equation in 2 Variables"/>
+            android:label="Linear Equation in 2 Variables" />
         <activity
             android:name="classActivities.class10.polynomialsActivity"
             android:label="Polynomials" />
