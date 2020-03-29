@@ -84,4 +84,15 @@
     <string name="quad_eqn1_a">a (Coefficient of x^2)</string>
     <string name="quad_eqn1_b">b (Coefficient of x)</string>
     <string name="quad_eqn1_c">c (Constant Term)</string>
+    <string name="pythagorus">Pythagorus\nTheorem</string>
+    <string name="area">Area</string>
+    <string name="distanceFormula">Distance\nFormula</string>
+    <string name="sectionFormula">Section\nFormula</string>
+    <string name="circle_detail">Circumference , C = 2∏r \n Area , A = ∏r^2 \nwhere, r is radii of circle </string>
+    <string name="circle1">*Enter any 1 value</string>
+    <string name="circle_r">r (Radii of Circle)</string>
+    <string name="circle_C">C (Circumference)</string>
+    <string name="circle_a">A (Area)</string>
+    <string name="areaCircle">Area\nof\nCircle</string>
+    <string name="areaRelated">Area\nof\nSector</string>
 </resources>
