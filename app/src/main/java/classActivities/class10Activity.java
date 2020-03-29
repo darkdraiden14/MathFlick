@@ -11,6 +11,7 @@ import android.widget.Button;
 import com.example.mathflick.R;
 
 import classActivities.class10.arithProgActivity;
+
 import classActivities.class10.circleActivity;
 import classActivities.class10.coordinateGeoActivity;
 import classActivities.class10.linearEqnActivity;

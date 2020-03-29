@@ -77,4 +77,11 @@
     <string name="linear_eqn_b">Second Equation</string>
     <string name="find">Find</string>
     <string name="linear_eqn_detail">Equation should be in form :\nax + by = c\n where, a,b &amp; c are constants.</string>
+    <string name="quad_eqn_detail">\tForm \t\t\t\t\t\t\t\t\t\t: \t ax^2 + bx + c=0\n
+        \tDeterminant (D) \t: \t D = b^2 - 4ac \n
+        \tSolution (x) \t\t\t\t: \t x = (-b + √D)/2a and (-b - √D)/2a</string>
+    <string name="quad_eqn1">*Enter values of a, b &amp; c</string>
+    <string name="quad_eqn1_a">a (Coefficient of x^2)</string>
+    <string name="quad_eqn1_b">b (Coefficient of x)</string>
+    <string name="quad_eqn1_c">c (Constant Term)</string>
 </resources>
