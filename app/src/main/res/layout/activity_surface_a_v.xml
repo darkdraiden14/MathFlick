@@ -1,9 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:scrollbars="none"
     tools:context="classActivities.class10.surfaceAVActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/cuboid"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient6"
+                android:gravity="bottom|center"
+                android:paddingBottom="6dp"
+                android:text="@string/cuboid"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/cube"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient8"
+                android:gravity="bottom|center"
+                android:paddingBottom="6dp"
+                android:text="@string/cube"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/sphere"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient3"
+                android:gravity="bottom|center"
+                android:paddingBottom="6dp"
+                android:text="@string/sphere"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/cone"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient9"
+                android:gravity="bottom|center"
+                android:paddingBottom="6dp"
+                android:text="@string/cone"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/cylinder"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient11"
+                android:gravity="bottom|center"
+                android:paddingBottom="6dp"
+                android:text="@string/cylinder"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/hemisphere"
+                style="@style/AppTheme"
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient2"
+                android:gravity="bottom|center"
+                android:paddingBottom="6dp"
+                android:text="@string/hemisphere"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>

@@ -80,7 +80,6 @@ public class class10Activity extends AppCompatActivity implements View.OnClickLi
 
     }
 
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

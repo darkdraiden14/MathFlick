@@ -95,4 +95,10 @@
     <string name="circle_a">A (Area)</string>
     <string name="areaCircle">Area\nof\nCircle</string>
     <string name="areaRelated">Area\nof\nSector</string>
+    <string name="cuboid">Cuboid</string>
+    <string name="cube">Cube</string>
+    <string name="sphere">Sphere</string>
+    <string name="cone">Cone</string>
+    <string name="cylinder">Cylinder</string>
+    <string name="hemisphere">Hemisphere</string>
 </resources>
