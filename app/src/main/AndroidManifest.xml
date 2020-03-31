@@ -17,12 +17,6 @@
             android:name="classActivities.class10.coordinateGeoActivity"
             android:label="Coordinate Geometry" />
         <activity
-            android:name="classActivities.class10.probabilityActivity"
-            android:label="Probability" />
-        <activity
-            android:name="classActivities.class10.statisticsActivity"
-            android:label="Statistics" />
-        <activity
             android:name="classActivities.class10.surfaceAVActivity"
             android:label="Surface Area &amp; Volume" />
         <activity

@@ -16,10 +16,8 @@ import classActivities.class10.circleActivity;
 import classActivities.class10.coordinateGeoActivity;
 import classActivities.class10.linearEqnActivity;
 import classActivities.class10.polynomialsActivity;
-import classActivities.class10.probabilityActivity;
 import classActivities.class10.quadEqnActivity;
 import classActivities.class10.realNumbersActivity;
-import classActivities.class10.statisticsActivity;
 import classActivities.class10.surfaceAVActivity;
 import classActivities.class10.triangleActivity;
 import classActivities.class10.trignoActivity;
@@ -32,7 +30,7 @@ public class class10Activity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_class10);
 
         Button btnReal, btnPoly, btnLinearEqn, btnQuad, btnArithProg, btnTriangle, btnCoGeo,
-                btnTrigno, btnCircle, btnSurfaceAV, btnStats, btnProb;
+                btnTrigno, btnCircle, btnSurfaceAV;
 
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
 
@@ -71,12 +69,6 @@ public class class10Activity extends AppCompatActivity implements View.OnClickLi
 
         btnSurfaceAV = findViewById(R.id.surfaceArea);
         btnSurfaceAV.setOnClickListener(this);
-
-        btnStats = findViewById(R.id.statistics);
-        btnStats.setOnClickListener(this);
-
-        btnProb = findViewById(R.id.probability);
-        btnProb.setOnClickListener(this);
 
     }
 
@@ -131,16 +123,6 @@ public class class10Activity extends AppCompatActivity implements View.OnClickLi
             case R.id.surfaceArea:
                 Intent surfaceAVIntent = new Intent(class10Activity.this, surfaceAVActivity.class);
                 startActivity(surfaceAVIntent);
-                break;
-
-            case R.id.statistics:
-                Intent statsIntent = new Intent(class10Activity.this, statisticsActivity.class);
-                startActivity(statsIntent);
-                break;
-
-            case R.id.probability:
-                Intent probIntent = new Intent(class10Activity.this, probabilityActivity.class);
-                startActivity(probIntent);
                 break;
         }
     }
