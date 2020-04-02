@@ -73,8 +73,8 @@
     <string name="zeroes">Zeroes</string>
     <string name="division">Polynomial\nDivision</string>
     <string name="linear_eqn">*Enter both equations in above form</string>
-    <string name="linear_eqn_a">First Equation</string>
-    <string name="linear_eqn_b">Second Equation</string>
+    <string name="linear_eqn_a">First Equation :</string>
+    <string name="linear_eqn_b">Second Equation :</string>
     <string name="find">Find</string>
     <string name="linear_eqn_detail">Equation should be in form :\nax + by = c\n where, a,b &amp; c are constants.</string>
     <string name="quad_eqn_detail">\tForm \t\t\t\t\t\t\t\t\t\t: \t ax^2 + bx + c=0\n
@@ -101,4 +101,13 @@
     <string name="cone">Cone</string>
     <string name="cylinder">Cylinder</string>
     <string name="hemisphere">Hemisphere</string>
+    <string name="variable_x">x</string>
+    <string name="addition_opr">+</string>
+    <string name="variable_y">y</string>
+    <string name="eql_opr">=</string>
+    <string name="polynomial_detail">Polynomials are of form : \n ax^2 +bx +c \nor\n ax^3+bx^2+cx+d</string>
+    <string name="polynomial_highlight">*Enter the values of coefficient</string>
+    <string name="polynomial_a">Polynomial :</string>
+    <string name="variable_x3">x^3</string>
+    <string name="variable_x2">x^2</string>
 </resources>

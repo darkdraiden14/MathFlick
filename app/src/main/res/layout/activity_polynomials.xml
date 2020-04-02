@@ -1,52 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="classActivities.class10.polynomialsActivity">
 
-    <TableLayout
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:stretchColumns="0,1"
-        android:baselineAligned="false">
+        tools:ignore="UselessParent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            tools:ignore="UselessParent"
-            android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/zeroes"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="0"
-                android:layout_marginStart="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient11"
-                android:text="@string/zeroes"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="start"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/division"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="1"
-                android:layout_marginStart="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient6"
-                android:text="@string/division"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
-        </TableRow>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
 
-    </TableLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
 
-</ScrollView>
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="@string/polynomial_detail"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10.0dip"
+                            android:text="@string/polynomial_highlight"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/txtcolor1" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/polynomial_a"
+                                    android:layout_width="33dp"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberSigned|numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/variable_x3"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:importantForAutofill="no"
+                                    android:padding="5.0dip"
+                                    android:text="@string/addition_opr"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@+id/polynomial_b"
+                                    android:layout_width="33dp"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberSigned|numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/variable_x2"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:importantForAutofill="no"
+                                    android:padding="5.0dip"
+                                    android:text="@string/addition_opr"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@+id/polynomial_c"
+                                    android:layout_width="33dp"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberSigned|numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/variable_x"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/addition_opr"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@+id/polynomial_d"
+                                    android:layout_width="33dp"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberSigned|numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:layout_marginBottom="10.0dip"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/polynomialFind"
+                                style="@style/AppTheme"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btnbg_green"
+                                android:text="@string/find"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="#ffffff" />
+
+                            <Button
+                                android:id="@id/polynomialReset"
+                                style="@style/AppTheme"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btnbg_red"
+                                android:text="@string/reset"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2.0">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.4"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:text="@string/result"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/txtcolor" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.6"
+                            android:gravity="center"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:id="@+id/polynomialResult"
+                                android:layout_width="fill_parent"
+                                android:layout_height="90dip"
+                                android:background="@drawable/editbg"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/txtcolor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

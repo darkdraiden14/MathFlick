@@ -56,8 +56,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10.0dip"
-                    android:layout_marginEnd="10dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="5.0dip">
 
@@ -82,9 +82,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
                     app:cardBackgroundColor="#ffffff"
                     app:cardCornerRadius="5.0dip">
 
@@ -101,12 +101,12 @@
                             android:baselineAligned="false"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
-                            android:weightSum="2.0">
+                            android:weightSum="1.0">
 
                             <LinearLayout
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
-                                android:layout_weight="1"
+                                android:layout_weight="0.6"
                                 android:gravity="start|center">
 
                                 <TextView
@@ -115,24 +115,85 @@
                                     android:gravity="center"
                                     android:padding="5.0dip"
                                     android:text="@string/linear_eqn_a"
-                                    android:textSize="21sp"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                    android:textColor="@color/txtcolor" />
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="21sp" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
                                 android:layout_margin="5.0dip"
-                                android:layout_weight="1"
-                                android:gravity="center">
+                                android:layout_weight="0.4">
 
                                 <EditText
-                                    android:layout_width="match_parent"
+                                    android:id="@+id/linear_a"
+                                    android:layout_width="33dp"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
                                     android:importantForAutofill="no"
-                                    android:inputType="text"
+                                    android:inputType="numberSigned|numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/variable_x"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:importantForAutofill="no"
+                                    android:padding="5.0dip"
+                                    android:text="@string/addition_opr"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@+id/linear_b"
+                                    android:layout_width="33dp"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberSigned|numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/variable_y"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/eql_opr"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@+id/linear_c"
+                                    android:layout_width="33dp"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberSigned|numberDecimal"
                                     android:padding="5.0dip"
                                     android:text=""
                                     android:textColor="@color/txtcolor"
@@ -142,12 +203,13 @@
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
                     app:cardBackgroundColor="#ffffff"
                     app:cardCornerRadius="5.0dip">
 
@@ -169,37 +231,99 @@
                             <LinearLayout
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
-                                android:layout_weight="1"
+                                android:layout_weight="1.2"
                                 android:gravity="start|center">
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
-                                    android:textSize="21sp"
                                     android:padding="5.0dip"
                                     android:text="@string/linear_eqn_b"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                    android:textColor="@color/txtcolor" />
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="21sp" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
                                 android:layout_margin="5.0dip"
-                                android:layout_weight="1"
-                                android:gravity="center">
+                                android:layout_weight="0.4">
 
                                 <EditText
-                                    android:layout_width="match_parent"
+                                    android:id="@id/linear_d"
+                                    android:layout_width="33dp"
                                     android:layout_height="40.0dip"
-                                    android:inputType="text"
                                     android:background="@drawable/editbg"
                                     android:importantForAutofill="no"
+                                    android:inputType="numberSigned|numberDecimal"
                                     android:padding="5.0dip"
                                     android:text=""
                                     android:textColor="@color/txtcolor"
                                     tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/variable_x"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:importantForAutofill="no"
+                                    android:padding="5.0dip"
+                                    android:text="@string/addition_opr"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@id/linear_e"
+                                    android:layout_width="33dp"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberSigned|numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/variable_y"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40.0dip"
+                                    android:padding="5.0dip"
+                                    android:text="@string/eql_opr"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="19sp"
+                                    tools:ignore="LabelFor" />
+
+                                <EditText
+                                    android:id="@id/linear_f"
+                                    android:layout_width="33dp"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberSigned|numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+
                             </LinearLayout>
 
                         </LinearLayout>
@@ -209,9 +333,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
                     app:cardBackgroundColor="#ffffff"
                     app:cardCornerRadius="5.0dip">
 
@@ -221,6 +345,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5.0dip"
                         android:orientation="vertical">
+
                         <LinearLayout
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
@@ -230,6 +355,7 @@
                             android:orientation="horizontal">
 
                             <Button
+                                android:id="@+id/linearFind"
                                 style="@style/AppTheme"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -241,6 +367,7 @@
                                 android:textColor="#ffffff" />
 
                             <Button
+                                android:id="@id/linearReset"
                                 style="@style/AppTheme"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -266,7 +393,7 @@
 
                     <LinearLayout
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="120dp"
                         android:baselineAligned="false"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
@@ -275,7 +402,7 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="fill_parent"
-                            android:layout_weight="0.7"
+                            android:layout_weight="0.4"
                             android:gravity="center">
 
                             <TextView
@@ -291,19 +418,24 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="fill_parent"
-                            android:layout_weight="1.3"
-                            android:gravity="start|center">
+                            android:layout_weight="1.6"
+                            android:gravity="center"
+                            android:padding="3dp">
 
                             <TextView
+                                android:id="@+id/linearResult"
                                 android:layout_width="fill_parent"
-                                android:layout_height="70dip"
-                                android:padding="3.0dip"
+                                android:layout_height="90dip"
+                                android:background="@drawable/editbg"
+                                android:gravity="center"
+                                android:padding="5.0dip"
                                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                                 android:textColor="@color/txtcolor" />
 
                         </LinearLayout>
 
                     </LinearLayout>
+
 
                 </androidx.cardview.widget.CardView>
 
