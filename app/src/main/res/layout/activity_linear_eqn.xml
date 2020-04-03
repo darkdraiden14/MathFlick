@@ -252,7 +252,7 @@
                                 android:layout_weight="0.4">
 
                                 <EditText
-                                    android:id="@id/linear_d"
+                                    android:id="@+id/linear_d"
                                     android:layout_width="33dp"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -283,7 +283,7 @@
                                     tools:ignore="LabelFor" />
 
                                 <EditText
-                                    android:id="@id/linear_e"
+                                    android:id="@+id/linear_e"
                                     android:layout_width="33dp"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -313,7 +313,7 @@
                                     tools:ignore="LabelFor" />
 
                                 <EditText
-                                    android:id="@id/linear_f"
+                                    android:id="@+id/linear_f"
                                     android:layout_width="33dp"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -367,7 +367,7 @@
                                 android:textColor="#ffffff" />
 
                             <Button
-                                android:id="@id/linearReset"
+                                android:id="@+id/linearReset"
                                 style="@style/AppTheme"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"

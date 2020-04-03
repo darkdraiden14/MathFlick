@@ -111,7 +111,7 @@
                                 <EditText
                                     android:id="@+id/polynomial_a"
                                     android:layout_width="33dp"
-                                    android:layout_height="40.0dip"
+                                    android:layout_height="35.0dip"
                                     android:background="@drawable/editbg"
                                     android:importantForAutofill="no"
                                     android:inputType="numberSigned|numberDecimal"
@@ -142,7 +142,7 @@
                                 <EditText
                                     android:id="@+id/polynomial_b"
                                     android:layout_width="33dp"
-                                    android:layout_height="40.0dip"
+                                    android:layout_height="35.0dip"
                                     android:background="@drawable/editbg"
                                     android:importantForAutofill="no"
                                     android:inputType="numberSigned|numberDecimal"
@@ -173,7 +173,7 @@
                                 <EditText
                                     android:id="@+id/polynomial_c"
                                     android:layout_width="33dp"
-                                    android:layout_height="40.0dip"
+                                    android:layout_height="35.0dip"
                                     android:background="@drawable/editbg"
                                     android:importantForAutofill="no"
                                     android:inputType="numberSigned|numberDecimal"
@@ -203,7 +203,7 @@
                                 <EditText
                                     android:id="@+id/polynomial_d"
                                     android:layout_width="33dp"
-                                    android:layout_height="40.0dip"
+                                    android:layout_height="35.0dip"
                                     android:background="@drawable/editbg"
                                     android:importantForAutofill="no"
                                     android:inputType="numberSigned|numberDecimal"
@@ -254,7 +254,7 @@
                                 android:textColor="#ffffff" />
 
                             <Button
-                                android:id="@id/polynomialReset"
+                                android:id="@+id/polynomialReset"
                                 style="@style/AppTheme"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -280,7 +280,7 @@
 
                     <LinearLayout
                         android:layout_width="fill_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="140dp"
                         android:baselineAligned="false"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
@@ -312,7 +312,7 @@
                             <TextView
                                 android:id="@+id/polynomialResult"
                                 android:layout_width="fill_parent"
-                                android:layout_height="90dip"
+                                android:layout_height="120dip"
                                 android:background="@drawable/editbg"
                                 android:gravity="center"
                                 android:padding="5.0dip"

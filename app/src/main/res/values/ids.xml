@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="linear_d" type="id" />
-    <item name="linear_e" type="id" />
-    <item name="linear_f" type="id" />
-    <item name="linearReset" type="id" />
-    <item name="polynomialReset" type="id" />
-</resources>

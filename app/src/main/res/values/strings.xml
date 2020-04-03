@@ -88,7 +88,7 @@
     <string name="area">Area</string>
     <string name="distanceFormula">Distance\nFormula</string>
     <string name="sectionFormula">Section\nFormula</string>
-    <string name="circle_detail">Circumference , C = 2∏r \n Area , A = ∏r^2 \nwhere, r is radii of circle </string>
+    <string name="circle_detail">Circumference , C = 2&#928;r \n Area , A = &#928;r^2 \nwhere, r is radii of circle </string>
     <string name="circle1">*Enter any 1 value</string>
     <string name="circle_r">r (Radii of Circle)</string>
     <string name="circle_C">C (Circumference)</string>
