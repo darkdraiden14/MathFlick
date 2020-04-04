@@ -138,6 +138,7 @@
                                 android:gravity="center">
 
                                 <EditText
+                                    android:id="@+id/first_term"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -201,6 +202,7 @@
                                 android:gravity="center">
 
                                 <EditText
+                                    android:id="@+id/second_term"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -263,6 +265,7 @@
                                 android:gravity="center">
 
                                 <EditText
+                                    android:id="@+id/numberOfterm"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -326,6 +329,7 @@
                                 android:gravity="center">
 
                                 <EditText
+                                    android:id="@+id/nthTerm"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -389,6 +393,7 @@
                                 android:gravity="center">
 
                                 <EditText
+                                    android:id="@+id/sumOfTerms"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -427,6 +432,7 @@
                             android:orientation="horizontal">
 
                             <Button
+                                android:id="@+id/APCalc"
                                 style="@style/AppTheme"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -438,6 +444,7 @@
                                 android:textColor="#ffffff" />
 
                             <Button
+                                android:id="@+id/APReset"
                                 style="@style/AppTheme"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -492,8 +499,10 @@
                             android:gravity="start|center">
 
                             <TextView
+                                android:id="@+id/APResult"
                                 android:layout_width="fill_parent"
-                                android:layout_height="70dip"
+                                android:layout_height="100dip"
+                                android:background="@drawable/editbg"
                                 android:padding="3.0dip"
                                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                                 android:textColor="@color/txtcolor" />
