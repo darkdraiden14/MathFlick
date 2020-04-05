@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,10 +13,11 @@ import android.widget.Toast;
 
 import com.example.mathflick.R;
 
-public class arithProgActivity extends AppCompatActivity implements View.OnClickListener{
+public class arithProgActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
 
     private EditText edtA, edtD, edtN, edtAn, edtSn;
     private TextView txtResult;
+    private int flag = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +39,25 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
         btnReset.setOnClickListener(this);
 
         edtA = findViewById(R.id.first_term);
+        edtA.performClick();
+        edtA.setOnTouchListener(this);
+
         edtD = findViewById(R.id.second_term);
+        edtD.performClick();
+        edtD.setOnTouchListener(this);
+
         edtN = findViewById(R.id.numberOfterm);
+        edtN.performClick();
+        edtN.setOnTouchListener(this);
+
         edtAn = findViewById(R.id.nthTerm);
+        edtAn.performClick();
+        edtAn.setOnTouchListener(this);
+
         edtSn = findViewById(R.id.sumOfTerms);
+        edtSn.performClick();
+        edtSn.setOnTouchListener(this);
+
         txtResult = findViewById(R.id.APResult);
 
     }
@@ -55,7 +72,7 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
                     Toast.makeText(this,"Enter the Values", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(this,"Worked", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this,flag, Toast.LENGTH_SHORT).show();
                 }
                 break;
 
@@ -68,5 +85,56 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
                 txtResult.setText("");
                 break;
         }
+    }
+
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        switch (v.getId()){
+            case R.id.first_term:
+                if(flag==3){
+                    edtA.setEnabled(false);
+                }
+                else{
+                    flag++;
+                }
+                break;
+
+            case R.id.second_term:
+                if(flag==3){
+                    edtD.setEnabled(false);
+                }
+                else{
+                    flag++;
+                }
+                break;
+
+            case R.id.numberOfterm:
+                if(flag==3){
+                    edtN.setEnabled(false);
+                }
+                else{
+                    flag++;
+                }
+                break;
+
+            case R.id.nthTerm:
+                if(flag==3){
+                    edtAn.setEnabled(false);
+                }
+                else{
+                    flag++;
+                }
+                break;
+
+            case R.id.sumOfTerms:
+                if(flag==3){
+                    edtSn.setEnabled(false);
+                }
+                else{
+                    flag++;
+                }
+                break;
+        }
+        return false;
     }
 }
