@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="classActivities.class10.arithProgActivity">
+    tools:context="classActivities.class10.triangle.PythagorusActivity">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -41,23 +41,14 @@
                         android:padding="5.0dip">
 
                         <TextView
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1.0"
-                            android:padding="5.0dip"
-                            android:gravity="center"
-                            android:text="@string/arithprogf"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="fill_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="0.5"
-                            android:text="@string/arith_prog_detail"
+                            android:text="@string/pythagorus_d"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textSize="17sp"
+                            android:gravity="center"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -77,13 +68,13 @@
                         android:baselineAligned="false"
                         android:orientation="horizontal">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="10.0dip"
-                                android:text="@string/arith_prog"
-                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                                android:textColor="@color/txtcolor1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10.0dip"
+                            android:text="@string/pythagorus_detail"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/txtcolor1" />
 
                     </LinearLayout>
 
@@ -124,7 +115,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
                                     android:padding="5.0dip"
-                                    android:text="@string/arith_a"
+                                    android:text="@string/base_b"
                                     android:textSize="21sp"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                                     android:textColor="@color/txtcolor" />
@@ -138,7 +129,7 @@
                                 android:gravity="center">
 
                                 <EditText
-                                    android:id="@+id/first_term"
+                                    android:id="@+id/base"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -189,7 +180,7 @@
                                     android:gravity="center"
                                     android:textSize="21sp"
                                     android:padding="5.0dip"
-                                    android:text="@string/arith_d"
+                                    android:text="@string/perpendicular_b"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                                     android:textColor="@color/txtcolor" />
                             </LinearLayout>
@@ -202,7 +193,7 @@
                                 android:gravity="center">
 
                                 <EditText
-                                    android:id="@+id/second_term"
+                                    android:id="@+id/perpendicular"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -252,7 +243,7 @@
                                     android:textSize="19sp"
                                     android:gravity="center"
                                     android:padding="5.0dip"
-                                    android:text="@string/arith_n"
+                                    android:text="@string/hypotenuse_h"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                                     android:textColor="@color/txtcolor" />
                             </LinearLayout>
@@ -265,7 +256,7 @@
                                 android:gravity="center">
 
                                 <EditText
-                                    android:id="@+id/numberOfterm"
+                                    android:id="@+id/hypotenuse"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -279,133 +270,6 @@
 
                         </LinearLayout>
 
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="10dp"
-                    app:cardBackgroundColor="#ffffff"
-                    app:cardCornerRadius="5.0dip">
-
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5.0dip"
-                        android:orientation="vertical">
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:baselineAligned="false"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:weightSum="2.0">
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_weight="1"
-                                android:gravity="start|center">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:padding="5.0dip"
-                                    android:textSize="21sp"
-                                    android:text="@string/arith_an"
-                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                    android:textColor="@color/txtcolor" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_margin="5.0dip"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <EditText
-                                    android:id="@+id/nthTerm"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="40.0dip"
-                                    android:background="@drawable/editbg"
-                                    android:importantForAutofill="no"
-                                    android:inputType="numberDecimal|numberSigned"
-                                    android:labelFor="@id/sineAngle"
-                                    android:padding="5.0dip"
-                                    android:text=""
-                                    android:textColor="@color/txtcolor"
-                                    tools:ignore="LabelFor" />
-                            </LinearLayout>
-
-                        </LinearLayout></LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="5dp"
-                    app:cardBackgroundColor="#ffffff"
-                    app:cardCornerRadius="5.0dip">
-
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5.0dip"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:baselineAligned="false"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:weightSum="2.0">
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:gravity="start|center"
-                                android:layout_weight="1">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="18sp"
-                                    android:padding="5.0dip"
-                                    android:gravity="center"
-                                    android:text="@string/arith_sn"
-                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                    android:textColor="@color/txtcolor" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_margin="5.0dip"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <EditText
-                                    android:id="@+id/sumOfTerms"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="40.0dip"
-                                    android:background="@drawable/editbg"
-                                    android:importantForAutofill="no"
-                                    android:inputType="numberDecimal|numberSigned"
-                                    android:padding="5.0dip"
-                                    android:text=""
-                                    android:textColor="@color/txtcolor"
-                                    tools:ignore="LabelFor" />
-                            </LinearLayout>
-
-                        </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -432,7 +296,7 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/APCalc"
+                                android:id="@+id/pythagorusCalc"
                                 style="@style/AppTheme"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -444,7 +308,7 @@
                                 android:textColor="#ffffff" />
 
                             <Button
-                                android:id="@+id/APReset"
+                                android:id="@+id/pythagorusReset"
                                 style="@style/AppTheme"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -499,9 +363,9 @@
                             android:gravity="start|center">
 
                             <TextView
-                                android:id="@+id/APResult"
+                                android:id="@+id/pythagorusResult"
                                 android:layout_width="fill_parent"
-                                android:layout_height="140dip"
+                                android:layout_height="90dip"
                                 android:background="@drawable/editbg"
                                 android:padding="3.0dip"
                                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"

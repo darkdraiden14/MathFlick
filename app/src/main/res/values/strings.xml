@@ -57,7 +57,7 @@
     <string name="cosecant">Cosec</string>
     <string name="secant">Sec</string>
     <string name="arith_a">a (first Term)</string>
-    <string name="arith_an">an (nth Term</string>
+    <string name="arith_an">an (nth Term)</string>
     <string name="arith_d">d (difference)</string>
     <string name="arith_sn">Sn (Sum of n Terms)</string>
     <string name="arith_prog">*Enter Any 3 Values</string>
@@ -110,4 +110,9 @@
     <string name="polynomial_a">Polynomial :</string>
     <string name="variable_x3">x^3</string>
     <string name="variable_x2">x^2</string>
+    <string name="pythagorus_detail">*Enter any 2 values</string>
+    <string name="base_b">B (Base)</string>
+    <string name="perpendicular_b">P (Perpendicular)</string>
+    <string name="hypotenuse_h">H (Hypotenuse)</string>
+    <string name="pythagorus_d">Pythagorus Theorem states that, \n H^2 = P^2 +B^2 \n for a Right Angled Triangle</string>
 </resources>
