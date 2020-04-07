@@ -1,10 +1,16 @@
 package classActivities.class10;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -51,10 +57,17 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.APCalc:
+                edtA.setBackground(getDrawable(R.drawable.editbg));
+                edtD.setBackground(getDrawable(R.drawable.editbg));
+                edtN.setBackground(getDrawable(R.drawable.editbg));
+                edtAn.setBackground(getDrawable(R.drawable.editbg));
+                edtSn.setBackground(getDrawable(R.drawable.editbg));
+
                 txtResult.setText("");
                 flag=0;
                 double a, d, n , an, sn;
@@ -77,6 +90,20 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
                     }
                     else if(a==-99999999 && n==-99999999){
                         Toast.makeText(this, "Enter any one A or N", Toast.LENGTH_SHORT).show();
+                        edtA.setBackground(getDrawable(R.drawable.error_bg));
+                        edtN.setBackground(getDrawable(R.drawable.error_bg));
+                        edtA.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(),R.anim.shake));
+                        edtN.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(),R.anim.shake));
+
+                        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            assert vibrator != null;
+                            vibrator.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE));
+                        } else {
+                            //deprecated in API 26
+                            assert vibrator != null;
+                            vibrator.vibrate(80);
+                        }
                         break;
                     }
                     else if(a==-99999999 && an==-99999999){
@@ -101,6 +128,17 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
                     }
                     else if(n==-99999999 && an==-99999999){
                         Toast.makeText(this, "Enter any one N or An", Toast.LENGTH_SHORT).show();
+                        edtN.setBackground(getDrawable(R.drawable.error_bg));
+                        edtAn.setBackground(getDrawable(R.drawable.error_bg));
+                        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            assert vibrator != null;
+                            vibrator.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE));
+                        } else {
+                            //deprecated in API 26
+                            assert vibrator != null;
+                            vibrator.vibrate(80);
+                        }
                         break;
                     }
                     else if(n==-99999999 && sn==-99999999){
