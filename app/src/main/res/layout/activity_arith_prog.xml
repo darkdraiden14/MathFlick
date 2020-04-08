@@ -494,16 +494,17 @@
 
                         <LinearLayout
                             android:layout_width="0dp"
-                            android:layout_height="fill_parent"
+                            android:layout_height="140dip"
                             android:layout_weight="1.6"
                             android:gravity="start|center">
 
                             <TextView
                                 android:id="@+id/APResult"
                                 android:layout_width="fill_parent"
-                                android:layout_height="140dip"
+                                android:layout_height="130dip"
                                 android:background="@drawable/editbg"
                                 android:padding="3.0dip"
+                                android:gravity="center"
                                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                                 android:textColor="@color/txtcolor" />
 

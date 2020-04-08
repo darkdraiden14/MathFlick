@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.example.mathflick.R;
 
+import classActivities.class10.triangle.AreaActivity;
 import classActivities.class10.triangle.PythagorusActivity;
 
 public class triangleActivity extends AppCompatActivity implements View.OnClickListener {
@@ -19,16 +20,27 @@ public class triangleActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_triangle);
 
 
-        Button btnPythagorus;
+        Button btnPythagorus, btnArea;
         btnPythagorus = findViewById(R.id.pythagorus);
         btnPythagorus.setOnClickListener(this);
+
+
+        btnArea = findViewById(R.id.Area);
+        btnArea.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if(v.getId()==R.id.pythagorus){
-            Intent areaIntent = new Intent(triangleActivity.this, PythagorusActivity.class);
-            startActivity(areaIntent);
+        switch (v.getId()){
+            case R.id.pythagorus:
+                Intent pythaIntent = new Intent(triangleActivity.this, PythagorusActivity.class);
+                startActivity(pythaIntent);
+                break;
+            case R.id.Area:
+                Intent areaIntent = new Intent(triangleActivity.this, AreaActivity.class);
+                startActivity(areaIntent);
+                break;
         }
+
     }
 }

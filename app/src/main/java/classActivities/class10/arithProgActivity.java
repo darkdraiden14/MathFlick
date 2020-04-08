@@ -69,85 +69,63 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
                 edtSn.setBackground(getDrawable(R.drawable.editbg));
 
                 txtResult.setText("");
-                flag=0;
-                double a, d, n , an, sn;
+                flag = 0;
+                double a, d, n, an, sn;
                 a = checkValue(edtA);
                 d = checkValue(edtD);
                 n = checkValue(edtN);
                 an = checkValue(edtAn);
                 sn = checkValue(edtSn);
 
-                if (n==0){
-                    Toast.makeText(this, "n cannot be 0",Toast.LENGTH_SHORT).show();
+                if (n == 0) {
+                    Toast.makeText(this, "n cannot be 0", Toast.LENGTH_SHORT).show();
+                    edtN.setBackground(getDrawable(R.drawable.error_bg));
+                    vibrate(80);
                     break;
                 }
 
-                if(flag==2) {
+                if (flag == 2) {
                     String result;
-                    if(a==-99999999 && d==-99999999){
-                        a = ((sn*2/n)-an);
-                        d = ((an - a)/(n-1));
-                    }
-                    else if(a==-99999999 && n==-99999999){
+                    if (a == -99999999 && d == -99999999) {
+                        a = ((sn * 2 / n) - an);
+                        d = ((an - a) / (n - 1));
+                    } else if (a == -99999999 && n == -99999999) {
                         Toast.makeText(this, "Enter any one A or N", Toast.LENGTH_SHORT).show();
                         edtA.setBackground(getDrawable(R.drawable.error_bg));
                         edtN.setBackground(getDrawable(R.drawable.error_bg));
-                        edtA.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(),R.anim.shake));
-                        edtN.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(),R.anim.shake));
+                        edtA.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake));
+                        edtN.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake));
 
-                        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                            assert vibrator != null;
-                            vibrator.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE));
-                        } else {
-                            //deprecated in API 26
-                            assert vibrator != null;
-                            vibrator.vibrate(80);
-                        }
+                        vibrate(80);
+
                         break;
-                    }
-                    else if(a==-99999999 && an==-99999999){
-                        a = ((sn*2/n)-((n-1)*d));
-                        an = (a + ((n-1)*d));
-                    }
-                    else if(a==-99999999 && sn==-99999999){
-                        a = (an-((n-1)*d));
-                        sn = ((n/2)*(a+an));
-                    }
-                    else if(d==-99999999 && n==-99999999){
-                        n = ((sn*2)/(a+an));
-                        d = ((an - a)/(n-1));
-                    }
-                    else if(d==-99999999 && an==-99999999){
-                        d = ((sn*2/n)-a)/(n-1);
-                        an = (a + ((n-1)*d));
-                    }
-                    else if(d==-99999999 && sn==-99999999){
-                        d = ((an-a)/(n-1));
-                        sn = ((n/2)*(a+an));
-                    }
-                    else if(n==-99999999 && an==-99999999){
+                    } else if (a == -99999999 && an == -99999999) {
+                        a = ((sn * 2 / n) - ((n - 1) * d));
+                        an = (a + ((n - 1) * d));
+                    } else if (a == -99999999 && sn == -99999999) {
+                        a = (an - ((n - 1) * d));
+                        sn = ((n / 2) * (a + an));
+                    } else if (d == -99999999 && n == -99999999) {
+                        n = ((sn * 2) / (a + an));
+                        d = ((an - a) / (n - 1));
+                    } else if (d == -99999999 && an == -99999999) {
+                        d = ((sn * 2 / n) - a) / (n - 1);
+                        an = (a + ((n - 1) * d));
+                    } else if (d == -99999999 && sn == -99999999) {
+                        d = ((an - a) / (n - 1));
+                        sn = ((n / 2) * (a + an));
+                    } else if (n == -99999999 && an == -99999999) {
                         Toast.makeText(this, "Enter any one N or An", Toast.LENGTH_SHORT).show();
                         edtN.setBackground(getDrawable(R.drawable.error_bg));
                         edtAn.setBackground(getDrawable(R.drawable.error_bg));
-                        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                            assert vibrator != null;
-                            vibrator.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE));
-                        } else {
-                            //deprecated in API 26
-                            assert vibrator != null;
-                            vibrator.vibrate(80);
-                        }
+                        vibrate(80);
                         break;
-                    }
-                    else if(n==-99999999 && sn==-99999999){
-                        n = (((an-a)/d)+1);
-                        sn = ((n/2)*(a+an));
-                    }
-                    else{ //an==-99999999 and sn==-99999999
-                        an = (a + ((n-1)*d));
-                        sn = ((n/2)*(a+an));
+                    } else if (n == -99999999 && sn == -99999999) {
+                        n = (((an - a) / d) + 1);
+                        sn = ((n / 2) * (a + an));
+                    } else { //an==-99999999 and sn==-99999999
+                        an = (a + ((n - 1) * d));
+                        sn = ((n / 2) * (a + an));
                     }
 
                     result = "A.P. :\n" + "\t\ta (first Term) = " + a + "\n\t\td (difference) = " + d +
@@ -155,9 +133,9 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
                             "\n\t\tSn (Sum of first n terms) = " + sn;
 
                     txtResult.setText(result);
-                }
-                else {
+                } else {
                     Toast.makeText(this, "Enter any 3 Values", Toast.LENGTH_SHORT).show();
+                    vibrate(100);
                 }
                 break;
 
@@ -172,13 +150,24 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
         }
     }
 
-    public double checkValue(EditText edt){
-        if(edt.getText().toString().trim().length() <= 0){
+    public double checkValue(EditText edt) {
+        if (edt.getText().toString().trim().length() <= 0) {
             flag++;
             return -99999999;
-        }
-        else{
+        } else {
             return Double.parseDouble(String.valueOf(edt.getText()));
+        }
+    }
+
+    public void vibrate(int time) {
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            assert vibrator != null;
+            vibrator.vibrate(VibrationEffect.createOneShot(time, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
+            //deprecated in API 26
+            assert vibrator != null;
+            vibrator.vibrate(time);
         }
     }
 }

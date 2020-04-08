@@ -115,4 +115,12 @@
     <string name="perpendicular_b">P (Perpendicular)</string>
     <string name="hypotenuse_h">H (Hypotenuse)</string>
     <string name="pythagorus_d">Pythagorus Theorem states that, \n H^2 = P^2 +B^2 \n for a Right Angled Triangle</string>
+    <string name="area_d">Area of Triangle = B x H x &#189; \n OR \n By heron\'s formula = √(s x (s-A) x (s-b) x (s-c)) \n where, s = (a + b +c)/3\n OR \n Area of Equilateral Triangle = √3 x a / 4</string>
+    <string name="area_detail">*Select any one :</string>
+
+    <string-array name="area_triangle">
+        <item>Area of Triangle</item>
+        <item>Heron's Formula</item>
+        <item>Equilateral Triangle</item>
+    </string-array>
 </resources>
