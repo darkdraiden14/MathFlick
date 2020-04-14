@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">MathFlick</string>
     <string name="math_flick" translatable="false">MathFlick</string>
     <string name="class1" translatable="false">Class 1</string>
@@ -120,12 +120,18 @@
     <string name="Spaces">"    "</string>
     <string name="side_a">Side A (a)</string>
     <string name="side_b">Side B (b)</string>
-    <string name="side_c">Side C (c)</string>
+    <string name="side_c" tools:ignore="TypographyOther">Side C (c)</string>
     <string name="side_s">Side S (s)</string>
+    <string name="coordinate_d">Distance Formula : \n Section Formula :</string>
 
     <string-array name="area_triangle">
         <item>Area of Triangle</item>
         <item>Heron\'s Formula</item>
         <item>Equilateral Triangle</item>
+    </string-array>
+
+    <string-array name="coordinate_geo">
+        <item>Distance Formula</item>
+        <item>Section Formula</item>
     </string-array>
 </resources>

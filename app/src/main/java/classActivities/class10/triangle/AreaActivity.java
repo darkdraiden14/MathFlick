@@ -121,6 +121,7 @@ public class AreaActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v){
         switch(v.getId()){
             case R.id.areaCalc:
+                txtResult.setText("");
                 if(idOfAdapter==0){
                     if (edtA.getText().toString().trim().length() <= 0 ||
                             edtB.getText().toString().trim().length() <= 0 ) {

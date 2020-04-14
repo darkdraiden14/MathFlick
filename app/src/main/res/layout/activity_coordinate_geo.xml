@@ -1,52 +1,606 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="classActivities.class10.coordinateGeoActivity">
 
-    <TableLayout
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:stretchColumns="0,1"
-        android:baselineAligned="false">
+        tools:ignore="UselessParent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:baselineAligned="false"
-            tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/distanceFormula"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="0"
-                android:layout_marginStart="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient6"
-                android:text="@string/distanceFormula"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/sectionFormula"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="1"
-                android:layout_marginStart="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient2"
-                android:text="@string/sectionFormula"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
-        </TableRow>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
 
-    </TableLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
 
-</ScrollView>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.5"
+                            android:text="@string/coordinate_d"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="10.0dip"
+                            android:layout_weight="0.9"
+                            android:text="@string/area_detail"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/txtcolor1" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/areaSpinner"
+                            android:layout_width="0dp"
+                            android:padding="10.0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.1"
+                            android:entries="@array/coordinate_geo"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/baseCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/base_b"
+                                    android:textSize="21sp"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/base"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/perpendicularCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textSize="21sp"
+                                    android:padding="5.0dip"
+                                    android:text="@string/perpendicular_b"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/height"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/aCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/side_a"
+                                    android:textSize="21sp"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/sideA"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textSize="21sp"
+                                    android:padding="5.0dip"
+                                    android:text="@string/side_b"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/sideB"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="visible"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/side_c"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/sideC"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="visible"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/side_s"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/sideS"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/buttonCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:layout_marginBottom="10.0dip"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/areaCalc"
+                                style="@style/AppTheme"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btnbg_green"
+                                android:text="@string/calculate"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="#ffffff" />
+
+                            <Button
+                                android:id="@+id/areaReset"
+                                style="@style/AppTheme"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btnbg_red"
+                                android:text="@string/reset"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/resultCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2.0">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.4"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:text="@string/result"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/txtcolor" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1.6"
+                            android:gravity="start|center">
+
+                            <TextView
+                                android:id="@+id/areaResult"
+                                android:layout_width="fill_parent"
+                                android:layout_height="90dip"
+                                android:background="@drawable/editbg"
+                                android:padding="3.0dip"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/txtcolor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
