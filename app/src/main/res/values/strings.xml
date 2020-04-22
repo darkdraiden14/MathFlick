@@ -93,8 +93,6 @@
     <string name="circle_r">r (Radii of Circle)</string>
     <string name="circle_C">C (Circumference)</string>
     <string name="circle_a">A (Area)</string>
-    <string name="areaCircle">Area\nof\nCircle</string>
-    <string name="areaRelated">Area\nof\nSector</string>
     <string name="cuboid">Cuboid</string>
     <string name="cube">Cube</string>
     <string name="sphere">Sphere</string>
@@ -122,7 +120,14 @@
     <string name="side_b">Side B (b)</string>
     <string name="side_c" tools:ignore="TypographyOther">Side C (c)</string>
     <string name="side_s">Side S (s)</string>
-    <string name="coordinate_d">Distance Formula : \n Section Formula :</string>
+    <string name="coordinate_d">Distance Formula :\n \n Section Formula :\n </string>
+    <string name="x1">x1</string>
+    <string name="x2">x2</string>
+    <string name="y1">y1</string>
+    <string name="y2">y2</string>
+    <string name="m">m</string>
+    <string name="n">n</string>
+    <string name="coGeo_detail">*Select any one</string>
 
     <string-array name="area_triangle">
         <item>Area of Triangle</item>
@@ -133,5 +138,10 @@
     <string-array name="coordinate_geo">
         <item>Distance Formula</item>
         <item>Section Formula</item>
+    </string-array>
+
+    <string-array name="circle">
+        <item>Area of Circle</item>
+        <item>Area of Sector</item>
     </string-array>
 </resources>

@@ -57,7 +57,7 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -159,15 +159,10 @@ public class arithProgActivity extends AppCompatActivity implements View.OnClick
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void vibrate(int time) {
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             assert vibrator != null;
             vibrator.vibrate(VibrationEffect.createOneShot(time, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else {
-            //deprecated in API 26
-            assert vibrator != null;
-            vibrator.vibrate(time);
-        }
     }
 }
