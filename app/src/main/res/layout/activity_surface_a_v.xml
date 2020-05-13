@@ -1,132 +1,823 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:scrollbars="none"
     tools:context="classActivities.class10.surfaceAVActivity">
 
-    <TableLayout
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:stretchColumns="0,1">
+        tools:ignore="UselessParent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:baselineAligned="false"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/cuboid"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="0"
-                android:layout_marginStart="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient6"
-                android:gravity="bottom|center"
-                android:paddingBottom="6dp"
-                android:text="@string/cuboid"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/cube"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="1"
-                android:layout_marginStart="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient8"
-                android:gravity="bottom|center"
-                android:paddingBottom="6dp"
-                android:text="@string/cube"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
-        </TableRow>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cubeD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:baselineAligned="false"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
 
-            <Button
-                android:id="@+id/sphere"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="0"
-                android:layout_marginStart="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient3"
-                android:gravity="bottom|center"
-                android:paddingBottom="6dp"
-                android:text="@string/sphere"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/cube1"
+                            android:contentDescription="@string/cube" />
 
-            <Button
-                android:id="@+id/cone"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="1"
-                android:layout_marginStart="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient9"
-                android:gravity="bottom|center"
-                android:paddingBottom="6dp"
-                android:text="@string/cone"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
-        </TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="@string/cube_d"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:baselineAligned="false"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cuboidD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
 
-            <Button
-                android:id="@+id/cylinder"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="0"
-                android:layout_marginStart="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient11"
-                android:gravity="bottom|center"
-                android:paddingBottom="6dp"
-                android:text="@string/cylinder"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
 
-            <Button
-                android:id="@+id/hemisphere"
-                style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
-                android:layout_column="1"
-                android:layout_marginStart="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/gradient2"
-                android:gravity="bottom|center"
-                android:paddingBottom="6dp"
-                android:text="@string/hemisphere"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
-        </TableRow>
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/cuboid"
+                            android:contentDescription="@string/cuboid" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="@string/cuboid_d"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
 
 
-    </TableLayout>
-</ScrollView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sphereD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/sphere"
+                            android:contentDescription="@string/sphere" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="@string/sphere_d"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/coneD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/cone"
+                            android:contentDescription="@string/cone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="@string/cone_d"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cylinderD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/cylinder"
+                            android:contentDescription="@string/cylinder" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="@string/cylinder_d"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/hemisphereD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/hemisphere"
+                            android:contentDescription="@string/hemisphere" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="@string/hemisphere_d"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:padding="10.0dip"
+                            android:text="@string/coGeo_detail"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/txtcolor1" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/surfaceSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.1"
+                            android:entries="@array/surface_a_v"
+                            android:padding="10.0dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cubeSideCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/cubeSide"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="21sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/cubeSide"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cuboidLCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/cuboidL"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="21sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/cuboidL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cuboidBCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/cuboidB"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="21sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/cuboidB"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cuboidHCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/cuboidH"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="21sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/cuboidH"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sphereRCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/sphere_r"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="21sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/sphereR"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/coneLCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2.0">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="start|center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5.0dip"
+                                    android:text="@string/sphere_l"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/txtcolor"
+                                    android:textSize="21sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/coneL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:background="@drawable/editbg"
+                                    android:importantForAutofill="no"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5.0dip"
+                                    android:text=""
+                                    android:textColor="@color/txtcolor"
+                                    tools:ignore="LabelFor" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/buttonCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5.0dip">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:layout_marginBottom="10.0dip"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/Calc"
+                                style="@style/AppTheme"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btnbg_green"
+                                android:text="@string/calculate"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="#ffffff" />
+
+                            <Button
+                                android:id="@+id/Reset"
+                                style="@style/AppTheme"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/btnbg_red"
+                                android:text="@string/reset"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/resultCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2.0">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.4"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5.0dip"
+                                android:text="@string/result"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/txtcolor" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1.6"
+                            android:gravity="start|center">
+
+                            <TextView
+                                android:id="@+id/result"
+                                android:layout_width="fill_parent"
+                                android:layout_height="90dip"
+                                android:background="@drawable/editbg"
+                                android:padding="3.0dip"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/txtcolor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

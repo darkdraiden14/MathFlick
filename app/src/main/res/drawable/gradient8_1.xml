@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="7.0dp" />
+
+            <gradient
+                android:endColor="#74ebd5"
+                android:startColor="#9face6" />
+
+        </shape>
+    </item>
+    <item android:drawable="@drawable/pattern_6"/>
+    <item android:drawable="@drawable/cube"
+        android:gravity="center"
+        android:bottom="15dp"/>
+
+</layer-list>

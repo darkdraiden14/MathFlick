@@ -51,9 +51,17 @@ public class coordinateGeoActivity extends AppCompatActivity implements View.OnC
                     public void onItemSelected(
                             AdapterView<?> parent, View view, int position, long id) {
                         idOfAdapter = id;
+                        resultTxt.setText("");
+                        x1.setText("");
+                        x2.setText("");
+                        y1.setText("");
+                        y2.setText("");
+                        m.setText("");
+                        n.setText("");
                         switch ((int) id){
                             case 0 :
                                 hideM();
+
                                 break;
 
                             case 1 :
@@ -97,7 +105,7 @@ public class coordinateGeoActivity extends AppCompatActivity implements View.OnC
                         double d1, d2, d;
                         d1 = (X1 - X2)*(X1-X2);
                         d2 = (Y1 - Y2)*(Y1-Y2);
-                        d = Math.sqrt(d1-d2);
+                        d = Math.sqrt(d1+d2);
 
                         result = "The Distance between the entered points is : " +  d;
                         resultTxt.setText(result);

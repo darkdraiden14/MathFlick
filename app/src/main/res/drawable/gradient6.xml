@@ -12,5 +12,4 @@
         </shape>
     </item>
     <item android:drawable="@drawable/pattern_3"/>
-
 </layer-list>

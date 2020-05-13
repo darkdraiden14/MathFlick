@@ -16,9 +16,6 @@
         <activity android:name="classActivities.class10.triangle.PythagorusActivity"
             android:label="Pythagorus Theorem"/>
         <activity
-            android:name="classActivities.class10.circle.areaCircleActivity"
-            android:label="Area of Circle" />
-        <activity
             android:name="classActivities.class10.coordinateGeoActivity"
             android:label="Coordinate Geometry" />
         <activity

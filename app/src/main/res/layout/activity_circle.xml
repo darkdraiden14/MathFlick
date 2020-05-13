@@ -37,39 +37,19 @@
                         android:layout_height="130dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:padding="5.0dip"
-                        android:weightSum="2.0">
+                        android:padding="5.0dip">
 
                         <TextView
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:layout_weight="1.1"
-                            android:text="@string/coordinate_d"
+                            android:text="@string/circle_d"
+                            android:gravity="center"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.9"
-                            android:orientation="vertical"
-                            android:gravity="center">
 
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="60dp"
-                                android:src="@drawable/distance"
-                                android:contentDescription="@string/distanceFormula"/>
-
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="60dp"
-                                android:src="@drawable/section"
-                                android:contentDescription="@string/sectionFormula" />
-
-                        </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -99,7 +79,7 @@
                             android:textColor="@color/txtcolor1" />
 
                         <androidx.appcompat.widget.AppCompatSpinner
-                            android:id="@+id/coGeoSpinner"
+                            android:id="@+id/circleSpinner"
                             android:layout_width="0dp"
                             android:padding="10.0dp"
                             android:layout_height="wrap_content"
@@ -146,7 +126,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
                                     android:padding="5.0dip"
-                                    android:text="@string/x1"
+                                    android:text="@string/radius"
                                     android:textSize="21sp"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                                     android:textColor="@color/txtcolor" />
@@ -160,7 +140,7 @@
                                 android:gravity="center">
 
                                 <EditText
-                                    android:id="@+id/x1"
+                                    android:id="@+id/radius"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -176,6 +156,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/thetaCard"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
@@ -198,7 +179,7 @@
                             android:baselineAligned="false"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
-                            android:weightSum="2.0">
+                            android:weightSum="2.00">
 
                             <LinearLayout
                                 android:layout_width="fill_parent"
@@ -212,7 +193,7 @@
                                     android:gravity="center"
                                     android:textSize="21sp"
                                     android:padding="5.0dip"
-                                    android:text="@string/x2"
+                                    android:text="@string/angle"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                                     android:textColor="@color/txtcolor" />
                             </LinearLayout>
@@ -225,137 +206,7 @@
                                 android:gravity="center">
 
                                 <EditText
-                                    android:id="@+id/x2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="40.0dip"
-                                    android:background="@drawable/editbg"
-                                    android:importantForAutofill="no"
-                                    android:inputType="numberDecimal|numberSigned"
-                                    android:padding="5.0dip"
-                                    android:text=""
-                                    android:textColor="@color/txtcolor"
-                                    tools:ignore="LabelFor" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="10dp"
-                    app:cardBackgroundColor="#ffffff"
-                    app:cardCornerRadius="5.0dip">
-
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5.0dip"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:baselineAligned="false"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:weightSum="2.0">
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_weight="1"
-                                android:gravity="start|center">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:padding="5.0dip"
-                                    android:text="@string/y1"
-                                    android:textSize="21sp"
-                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                    android:textColor="@color/txtcolor" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_margin="5.0dip"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <EditText
-                                    android:id="@+id/y1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="40.0dip"
-                                    android:background="@drawable/editbg"
-                                    android:importantForAutofill="no"
-                                    android:inputType="numberDecimal|numberSigned"
-                                    android:padding="5.0dip"
-                                    android:text=""
-                                    android:textColor="@color/txtcolor"
-                                    tools:ignore="LabelFor" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    android:visibility="visible"
-                    android:layout_marginTop="5dp"
-                    app:cardBackgroundColor="#ffffff"
-                    app:cardCornerRadius="5.0dip">
-
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5.0dip"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:baselineAligned="false"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:weightSum="2.0">
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_weight="1"
-                                android:gravity="start|center">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:textSize="21sp"
-                                    android:padding="5.0dip"
-                                    android:text="@string/y2"
-                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                    android:textColor="@color/txtcolor" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_margin="5.0dip"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <EditText
-                                    android:id="@+id/y2"
+                                    android:id="@+id/theta"
                                     android:layout_width="match_parent"
                                     android:layout_height="40.0dip"
                                     android:background="@drawable/editbg"
@@ -371,138 +222,6 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/mCard"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:visibility="visible"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="5dp"
-                    app:cardBackgroundColor="#ffffff"
-                    app:cardCornerRadius="5.0dip">
-
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5.0dip"
-                        android:orientation="vertical">
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:baselineAligned="false"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:weightSum="2.0">
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_weight="1"
-                                android:gravity="start|center">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="19sp"
-                                    android:gravity="center"
-                                    android:padding="5.0dip"
-                                    android:text="@string/m"
-                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                    android:textColor="@color/txtcolor" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_margin="5.0dip"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <EditText
-                                    android:id="@+id/m"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="40.0dip"
-                                    android:background="@drawable/editbg"
-                                    android:importantForAutofill="no"
-                                    android:inputType="numberDecimal|numberSigned"
-                                    android:padding="5.0dip"
-                                    android:text=""
-                                    android:textColor="@color/txtcolor"
-                                    tools:ignore="LabelFor" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/nCard"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:visibility="visible"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="5dp"
-                    app:cardBackgroundColor="#ffffff"
-                    app:cardCornerRadius="5.0dip">
-
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5.0dip"
-                        android:orientation="vertical">
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:baselineAligned="false"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:weightSum="2.0">
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_weight="1"
-                                android:gravity="start|center">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="19sp"
-                                    android:gravity="center"
-                                    android:padding="5.0dip"
-                                    android:text="@string/n"
-                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                                    android:textColor="@color/txtcolor" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:layout_margin="5.0dip"
-                                android:layout_weight="1"
-                                android:gravity="center">
-
-                                <EditText
-                                    android:id="@+id/n"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="40.0dip"
-                                    android:background="@drawable/editbg"
-                                    android:importantForAutofill="no"
-                                    android:inputType="numberDecimal|numberSigned"
-                                    android:padding="5.0dip"
-                                    android:text=""
-                                    android:textColor="@color/txtcolor"
-                                    tools:ignore="LabelFor" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/buttonCard"
@@ -599,7 +318,7 @@
                             android:gravity="start|center">
 
                             <TextView
-                                android:id="@+id/coGeoResult"
+                                android:id="@+id/circleResult"
                                 android:layout_width="fill_parent"
                                 android:layout_height="90dip"
                                 android:background="@drawable/editbg"
