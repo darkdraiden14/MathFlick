@@ -47,7 +47,7 @@
                             android:layout_weight="1.1"
                             android:text="@string/coordinate_d"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:textStyle="bold" />
 
                         <LinearLayout

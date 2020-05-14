@@ -45,8 +45,8 @@
                             android:layout_gravity="center_vertical"
                             android:layout_weight="0.5"
                             android:text="@string/area_d"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textSize="16sp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:textStyle="bold" />
                     </LinearLayout>
@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10.0dip"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="3dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="5.0dip">
 

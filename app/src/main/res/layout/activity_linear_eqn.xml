@@ -73,6 +73,7 @@
                             android:padding="10.0dip"
                             android:text="@string/linear_eqn"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textSize="16sp"
                             android:textColor="@color/txtcolor1" />
 
                     </LinearLayout>
@@ -117,7 +118,7 @@
                                     android:text="@string/linear_eqn_a"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="21sp" />
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -144,7 +145,7 @@
                                     android:padding="5.0dip"
                                     android:text="@string/variable_x"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="19sp"
+                                    android:textSize="16sp"
                                     tools:ignore="LabelFor" />
 
                                 <TextView
@@ -154,7 +155,7 @@
                                     android:padding="5.0dip"
                                     android:text="@string/addition_opr"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="19sp"
+                                    android:textSize="16sp"
                                     tools:ignore="LabelFor" />
 
                                 <EditText
@@ -175,7 +176,7 @@
                                     android:padding="5.0dip"
                                     android:text="@string/variable_y"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="19sp"
+                                    android:textSize="16sp"
                                     tools:ignore="LabelFor" />
 
                                 <TextView
@@ -184,7 +185,7 @@
                                     android:padding="5.0dip"
                                     android:text="@string/eql_opr"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="19sp"
+                                    android:textSize="16sp"
                                     tools:ignore="LabelFor" />
 
                                 <EditText
@@ -242,7 +243,7 @@
                                     android:text="@string/linear_eqn_b"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="21sp" />
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -269,7 +270,7 @@
                                     android:padding="5.0dip"
                                     android:text="@string/variable_x"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="19sp"
+                                    android:textSize="16sp"
                                     tools:ignore="LabelFor" />
 
                                 <TextView
@@ -279,7 +280,7 @@
                                     android:padding="5.0dip"
                                     android:text="@string/addition_opr"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="19sp"
+                                    android:textSize="16sp"
                                     tools:ignore="LabelFor" />
 
                                 <EditText
@@ -300,7 +301,7 @@
                                     android:padding="5.0dip"
                                     android:text="@string/variable_y"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="19sp"
+                                    android:textSize="16sp"
                                     tools:ignore="LabelFor" />
 
                                 <TextView
@@ -309,7 +310,7 @@
                                     android:padding="5.0dip"
                                     android:text="@string/eql_opr"
                                     android:textColor="@color/txtcolor"
-                                    android:textSize="19sp"
+                                    android:textSize="16sp"
                                     tools:ignore="LabelFor" />
 
                                 <EditText

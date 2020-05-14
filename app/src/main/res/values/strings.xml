@@ -117,7 +117,7 @@
     <string name="side_c" tools:ignore="TypographyOther">Side C (c)</string>
     <string name="side_s">Side S (s)</string>
     <string name="coordinate_d">Distance Formula :\n \n Section Formula :\n </string>
-    <string name="circle_d">Area of Circle : &#928;xr^2\n \n Area of Sector : θx&#928;xr^2/360\n </string>
+    <string name="circle_d">Area of Circle : πr^2\n \n Area of Sector : (θ/360)πr^2\n </string>
     <string name="x1">x1</string>
     <string name="x2">x2</string>
     <string name="y1">y1</string>
@@ -129,7 +129,7 @@
     <string name="angle">θ (Angle)</string>
     <string name="cube_d">Total Surface Area  = 6*a*a\n\nCurved Surface Area = 4*a*a\n\nVolume of cube = a*a*a </string>
     <string name="cuboid_d">Total Surface Area  = 2(lb+bh+hl)\n\nCurved Surface Area = 2*h(l+b)\n\nVolume of cuboid = l*b*h </string>
-    <string name="sphere_d">Total Surface Area  = 4πr^2\n\nCurved Surface Area = 4πr^2\n\nVolume of cube = (4/3)πr^2 </string>
+    <string name="sphere_d">Total Surface Area  = 4πr^2\n\nCurved Surface Area = 4πr^2\n\nVolume of cube = (4/3)πr^3 </string>
     <string name="cone_d">Total Surface Area = πr(r+l)\n\nCurved Surface Area = πrl\n\nVolume of cube = 1/3πr^2h</string>
     <string name="cylinder_d">Total Surface Area = 2πr(r+h)\n\nCurved Surface Area = 2πrh\n\nVolume of cube = πr^2h</string>
     <string name="hemisphere_d">Total Surface Area = 3πr^2\n\nCurved Surface Area = 2πr^2\n\nVolume of cube = 2/3π*r^3</string>
@@ -146,6 +146,7 @@
     <string name="sphereInstruct">*Enter any one Value</string>
     <string name="coneInstruct">*Enter any two values</string>
     <string name="sphere_l">l (Slant Height)</string>
+    <string name="theta">θ (Angle)</string>
 
     <string-array name="area_triangle">
         <item>Area of Triangle</item>

@@ -2,13 +2,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:scrollbars="none"
     android:layout_height="match_parent"
     tools:context="classActivities.class10Activity">
 
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="10dp"
         android:stretchColumns="0,1"
         android:baselineAligned="false">
 
@@ -16,170 +17,170 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp"
+            android:paddingBottom="5dp"
             android:baselineAligned="false">
 
             <Button
                 android:id="@+id/realNumber"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="0"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient"
                 android:text="@string/real_numbers"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
 
             <Button
                 android:id="@+id/polynomial"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="1"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient1"
                 android:text="@string/polynomials"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:baselineAligned="false">
 
             <Button
                 android:id="@+id/linearEqn"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="0"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient2"
                 android:text="@string/linear_equation_in_two_variables"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
 
             <Button
                 android:id="@+id/quadEqn"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="1"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient3"
                 android:text="@string/quadratic_equation"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:baselineAligned="false">
 
             <Button
                 android:id="@+id/arithProg"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="0"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient4"
                 android:text="@string/arithmetic_progression"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
 
             <Button
                 android:id="@+id/triangle"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="1"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient5"
                 android:text="@string/triangles"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:baselineAligned="false">
 
             <Button
                 android:id="@+id/coordinateGeometry"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="0"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient6"
                 android:text="@string/coordinate_geometry"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
 
             <Button
                 android:id="@+id/trignometry"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="1"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient7"
                 android:text="@string/trignometry"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:baselineAligned="false">
 
             <Button
                 android:id="@+id/circle"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="0"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient8"
                 android:text="@string/circle"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
 
             <Button
                 android:id="@+id/surfaceArea"
                 style="@style/AppTheme"
-                android:layout_width="240dp"
-                android:layout_height="180dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
                 android:layout_column="1"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/gradient9"
                 android:text="@string/surface_area_and_volume"
                 android:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="21sp" />
         </TableRow>
 
     </TableLayout>

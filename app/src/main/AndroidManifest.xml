@@ -66,9 +66,6 @@
         <activity
             android:name="classActivities.class10Activity"
             android:label="Home" />
-        <activity
-            android:name=".MainActivity"
-            android:label="Home" />
         <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

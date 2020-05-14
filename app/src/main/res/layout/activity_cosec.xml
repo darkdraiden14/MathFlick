@@ -85,13 +85,13 @@
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
                                 android:layout_weight="1.0"
-                                android:gravity="start|center">
+                                android:gravity="center">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:padding="5.0dip"
-                                    android:text="@string/cosec"
+                                    android:text="@string/theta"
                                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                                     android:textColor="@color/txtcolor" />
                             </LinearLayout>
@@ -116,7 +116,6 @@
                             </LinearLayout>
 
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
@@ -239,7 +238,7 @@
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
                                 android:layout_weight="1.0"
-                                android:gravity="start|center">
+                                android:gravity="center">
 
                                 <TextView
                                     android:layout_width="wrap_content"
